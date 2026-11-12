@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background-color: #1B2A4A;
+  color: #1B2A4A;
+  text-align: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Baloo 2', sans-serif;
+  color: #FFD166;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  width: 90px;
+  height: 22px;
+  background: rgba(255, 111, 89, 0.45);
+}
+
+input[type="text"], input:not([type]) {
+  padding: 10px 12px;
+  border: 2px solid #1B2A4A;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+button {
+  background-color: #FF6F59;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  transition: transform 0.1s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+.taskRow {
+  margin: 18px auto;
+  max-width: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFD166;
+  padding: 14px 16px;
+  border-radius: 4px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+  transform: rotate(-1deg);
+}
+
+.taskRow:nth-child(even) {
+  background-color: #8ECDB7;
+  transform: rotate(1deg);
+}
+
+.task {
+  color: #1B2A4A;
+  flex: 1;
+  text-align: left;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.count {
+  color: white;
+  font-size: 14px;
+  font-weight: 900;
+}
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.checkBox {
+  cursor: pointer;
+  accent-color: #1B2A4A;
+}
+
+.deleteButton {
+  background-color: #1B2A4A;
+}
